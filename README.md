@@ -1,1 +1,1 @@
-# Bills-and-Tips-Calculator
+# BillsTipsCalculator
