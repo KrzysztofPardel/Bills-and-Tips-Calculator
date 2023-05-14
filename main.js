@@ -1,3 +1,4 @@
+/*
 //I select the element that I need
 const price = document.querySelector('#price');
 const people = document.querySelector('#people');
@@ -41,3 +42,33 @@ const enterKeyCheck = (e) => {
 
 btnCount.addEventListener('click', isFilled);
 btnCount.addEventListener('keyup', enterKeyCheck);
+*/
+//version2
+const price = document.querySelector('#price');
+const people = document.querySelector('#people');
+const tip = document.querySelector('#tip');
+const error = document.querySelector('#error');
+const countBtn = document.querySelector('.count');
+const costInfo = document.querySelector('.cost-info');
+const cost = document.querySelector('.cost');
+
+const showBill = () => {
+	if (price.value == '' || people.value == '' || tip.value == 0) {
+		error.textContent = 'Fill out all of the sections';
+		costInfo.style.display = 'none';
+	} else {
+		countBill();
+	}
+};
+
+const countBill = () => {
+	const newPrice = parseFloat(price.value); //zmiana na number+przybliżenie
+	const newPeople = parseInt(people.value); //zmiana na number
+	const newTip = parseFloat(tip.value);
+	const sum = (newPrice + newPrice * newTip) / newPeople;
+	costInfo.style.display = 'block';
+
+	cost.textContent = sum.toFixed(2);
+};
+
+countBtn.addEventListener('click', showBill);
