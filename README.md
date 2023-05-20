@@ -3,7 +3,7 @@
 #### Have you ever ran into a problem of having to share a bill with your friends? What if on top of that you wanted to leave a tip? How are you going to count all of it? The Bill Splitter App is here to help! 
 
 🔎 The website has been deployed and can be visited here:
-_[small-product-browser.vercel.app](small-product-browser.vercel.app)_.
+_[Bill Splitter](https://billsplitter-eight.vercel.app)_.
 
 ---
 
@@ -33,11 +33,11 @@ npm install -g sass
 
 ### Overall view
 
-<img style='height: 30rem; display:block; margin-top:1rem; margin-bottom:2rem' src="./assets/BillSplitter.png" alt="screeenshot">
+<img style='height: 30.1rem; display:block; margin-top:1rem; margin-bottom:2rem' src="./assets/BillSplitter.png" alt="screeenshot">
 
 ### A view with data and calculation results
 
-<img style='height: 30.8rem; display:block; margin-top:1rem' src="./assets/BillSplitter2.png" alt="screeenshot" >
+<img style='height: 30.1rem; display:block; margin-top:1rem' src="./assets/BillSplitter2.png" alt="screeenshot" >
 
 ---
 
